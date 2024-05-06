@@ -1,0 +1,32 @@
+{
+    "name": "Conqur - Empowering Freelancers one task at a time",
+    "short_name": "Conqur",
+    "description": "Conqur - Discover the ultimate project management solution designed for freelancers. Track your time efficiently, manage projects effortlessly, and unlock productivity like never before. Join our waitlist today and be the first to experience Conqur!",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "http://localhost:3000",
+    "orientation": "landscape"
+}
