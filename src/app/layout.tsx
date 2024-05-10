@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 
-const fontFamily = Nunito_Sans({ subsets: ["latin"] });
+const fontFamily = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito-sans",
+});
 
 export const metadata: Metadata = {
   title: "Conqur",

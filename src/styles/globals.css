@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-margin-x: 65px;
+  --logo-font: 1.5rem;
+  --cta-btn-font: 1.125rem;
+  --hero-title-font: 2.125rem;
+  --hero-subtitle-font: 1.25rem;
+  --hero-email-input-font: 1.125rem;
+  --section-badge-font: 1rem;
+  --section-title-font: 1.875rem;
+  --section-subtitle-font: 1.25rem;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text scroll-smooth;
+  }
+
+  * {
+    @apply box-border font-normal not-italic;
+  }
+}
+
+@layer utilities {
+  .my-cta-btn {
+    @apply font-semibold text-bg text-cta-btn-font flex items-center justify-center min-w-[182px] w-fit h-fit px-10 py-2 bg-primary rounded-xl duration-150 hover:bg-secondary hover:text-text active:scale-105;
+  }
+
+  .feature-card {
+    @apply relative w-full max-w-[450px] h-fit min-h-full overflow-hidden bg-sec-bg px-6 pb-6 pt-28 rounded-[18px] flex flex-col gap-y-5 duration-150 hover:bg-high-sec-bg;
+  }
+
+  .feature-card > h3 {
+    @apply text-section-subtitle-font font-bold;
+  }
+
+  .feature-card > p {
+    @apply text-lg;
+  }
+
+  .feature-card > .feature-icon-holder {
+    @apply absolute bg-primary text-bg top-0 left-0 text-[42px] p-6 rounded-ee-[46px];
+  }
+
+  .feature-card:hover > .feature-icon-holder > svg {
+    animation: heartBeatAni 1000ms ease-in-out 50ms 10 both;
+  }
+}
+
+@keyframes heartBeatAni {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.embla {
+  overflow: hidden;
+  padding: 45px 0px;
+}
+.embla__container {
+  display: flex;
+  column-gap: 44px;
+  /* align-items: center; */
+}
+.embla__slide {
+  flex: 0 0 410px;
+  min-width: 0;
+  min-height: 100%;
+  height: fit-content;
+}
+
+.embla__slide:first-of-type {
+  margin-left: 44px;
+}

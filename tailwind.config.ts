@@ -7,11 +7,35 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      text: "#090F16",
+      "sec-text": "#111B22",
+      bg: "#F5F8FA",
+      primary: "#34495E",
+      secondary: "#89BBEE",
+      accent: "#EE47D1",
+      input: "#E9ECEE",
+      "sec-bg": "#EAF2F9",
+      "high-sec-bg": "#E0ECF8",
+      danger: "#7a0012",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      spacing: {
+        "page-margin-x": "var(--page-margin-x)",
+        "section-pad-y": "65px",
+      },
+      fontSize: {
+        "logo-font": "var(--logo-font)",
+        "cta-btn-font": "var(--cta-btn-font)",
+        "hero-title-font": "var(--hero-title-font)",
+        "hero-subtitle-font": "var(--hero-subtitle-font)",
+        "hero-email-input-font": "var(--hero-email-input-font)",
+        "section-badge-font": "var(--section-badge-font)",
+        "section-title-font": "var(--section-title-font)",
+        "section-subtitle-font": "var(--section-subtitle-font)",
+      },
+      fontFamily: {
+        nunito: ["var(--font-nunito-sans)"],
       },
     },
   },
