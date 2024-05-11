@@ -4,8 +4,6 @@ import Image from "next/image";
 import CTAForm from "./CTAForm";
 
 export default function Hero() {
-  console.log(Picture1);
-
   return (
     <section className="flex justify-between items-center px-page-margin-x py-section-pad-y">
       <div className="max-w-[625px] flex flex-col gap-y-8">

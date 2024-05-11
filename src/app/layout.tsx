@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "../styles/globals.css";
+import NotifsProvider from "@/app/_components/NotifsProvider";
+import dynamic from "next/dynamic";
+
+const NotifComp = dynamic(() => import("./_components/NotifComp"), {
+  ssr: false,
+});
 
 const fontFamily = Nunito_Sans({
   subsets: ["latin"],
@@ -22,7 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fontFamily.className}>{children}</body>
+      <body className={fontFamily.className}>
+        <NotifsProvider>
+          <NotifComp />
+          {children}
+        </NotifsProvider>
+      </body>
     </html>
   );
 }

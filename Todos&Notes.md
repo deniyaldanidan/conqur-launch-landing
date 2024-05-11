@@ -15,8 +15,8 @@
 
 ---
 
-- [ ] Build backend API for subscription (add email-input to the subscriber list)
-- [ ] Couple the backend api to CTAFORM
+- [x] Build backend API for subscription (add email-input to the subscriber list)
+- [x] Integrate the backend api to CTAFORM
 - [ ] Add Vercel CLI
 
 ## Notes:

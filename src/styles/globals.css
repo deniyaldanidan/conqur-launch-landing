@@ -30,7 +30,7 @@
   }
 
   .feature-card {
-    @apply relative w-full max-w-[450px] h-fit min-h-full overflow-hidden bg-sec-bg px-6 pb-6 pt-28 rounded-[18px] flex flex-col gap-y-5 duration-150 hover:bg-high-sec-bg;
+    @apply relative w-full max-w-[450px] h-fit min-h-full overflow-hidden bg-sec-bg shadow-md px-6 pb-6 pt-28 rounded-[18px] flex flex-col gap-y-5 duration-150 hover:bg-high-sec-bg hover:shadow-lg;
   }
 
   .feature-card > h3 {
