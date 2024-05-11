@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
   try {
     const data = parser.parse(await request.json());
 
-    fetch(
+    const subscribeReq = await fetch(
       `https://${process.env.MAILCHIMPDC}.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMPLISTID}/members`,
       {
         method: "POST",
@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
       }
     );
 
-    // const res = await subscribeReq.json();
-    // console.log(res);
+    const res = await subscribeReq.json();
+    console.log(res);
 
     return NextResponse.json({ success: true });
   } catch (error) {
