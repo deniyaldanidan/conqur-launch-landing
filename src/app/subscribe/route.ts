@@ -21,6 +21,9 @@ export async function POST(request: NextRequest) {
       }
     );
 
+    const res = await subscribeReq.json();
+    console.log(res);
+
     return NextResponse.json({ success: true });
   } catch (error) {
     if (error instanceof SyntaxError || error instanceof ZodError) {
