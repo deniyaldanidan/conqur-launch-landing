@@ -17,7 +17,7 @@ export default function CTASection() {
           offers on our revolutionary freelance management platform.
         </h3>
       </div>
-      <div className="w-full max-w-[680px] mx-auto">
+      <div className="w-full max-w-[600px] mx-auto">
         <CTAForm />
       </div>
     </section>

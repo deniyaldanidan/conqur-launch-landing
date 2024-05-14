@@ -5,7 +5,7 @@ import TestimonialsSlider from "./TestimonialsSlider";
 
 export default function Testimonials() {
   return (
-    <section className="px-page-margin-x py-section-pad-y">
+    <section className="px-page-margin-x py-section-pad-y max-w-[1650px] mx-auto">
       <div className="flex flex-col items-center gap-y-6 mb-2 max-w-[650px] mx-auto">
         <div className="flex flex-col items-center gap-y-2.5">
           <SectionBadge text="FEATURES" />

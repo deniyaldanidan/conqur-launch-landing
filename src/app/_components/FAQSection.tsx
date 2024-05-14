@@ -3,7 +3,7 @@ import FaqCard from "./FaqCard";
 
 export default function FAQSection() {
   return (
-    <section className="px-page-margin-x py-section-pad-y">
+    <section className="px-page-margin-x py-section-pad-y max-w-[1650px] mx-auto">
       <h2 className="text-section-title-font font-bold capitalize text-left mb-11">
         FAQ&apos;s
       </h2>

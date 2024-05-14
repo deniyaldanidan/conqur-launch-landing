@@ -8,9 +8,16 @@ export default function TestimonialsSlider({
 }: {
   children: React.ReactNode;
 }) {
-  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" }, [
-    Autoplay({ delay: 3000 }),
-  ]);
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "center",
+      breakpoints: {
+        "(max-width: 555px)": { align: "start" },
+      },
+    },
+    [Autoplay({ delay: 4000 })]
+  );
 
   return (
     <div className="embla" ref={emblaRef}>
