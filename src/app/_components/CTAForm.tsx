@@ -67,6 +67,7 @@ export default function CTAForm() {
         autoComplete="email"
         aria-invalid={errorState}
         aria-errormessage="cta-form-error"
+        id="waitlist-form-email-input"
       />
       <button
         type="submit"
