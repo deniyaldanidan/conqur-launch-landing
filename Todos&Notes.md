@@ -22,8 +22,6 @@
 
 ---
 
-Consolas, 'Courier New', monospace,
-
 - [x] Responsiveness
 
   - [x] Header
@@ -36,18 +34,18 @@ Consolas, 'Courier New', monospace,
   - [x] Primary Footer
   - [x] Secondary Footer
 
-- [ ] Accessibility
+- [x] Accessibility
 
-  - [ ] CTAFORM
-  - [ ] Header
-  - [ ] Hero
-  - [ ] Features
-  - [ ] Details
-  - [ ] Testimonials
-  - [ ] CTASECTION
-  - [ ] FAQSection
-  - [ ] Primary Footer
-  - [ ] Secondary Footer
+  - [x] CTAFORM
+  - [x] Header
+  - [x] Hero
+  - [x] Features
+  - [x] Details
+  - [x] Testimonials
+  - [x] CTASECTION
+  - [x] FAQSection
+  - [x] Primary Footer
+  - [x] Secondary Footer
 
 ## Notes:
 

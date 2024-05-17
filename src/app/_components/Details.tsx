@@ -3,15 +3,25 @@ import Link from "next/link";
 
 export default function Details() {
   return (
-    <section className="px-page-margin-x py-section-pad-y flex justify-between items-start gap-9 max-w-[1400px] mx-auto laptop-sm:flex-col laptop-sm:items-center mobile:items-start">
+    <section
+      className="px-page-margin-x py-section-pad-y flex justify-between items-start gap-9 max-w-[1400px] mx-auto laptop-sm:flex-col laptop-sm:items-center mobile:items-start"
+      aria-labelledby="details-section-title"
+      aria-describedby="details-section-description"
+    >
       {/* Left */}
       <div className="flex flex-col items-start gap-y-6 max-w-[620px] laptop:max-w-[510px] laptop-md:max-w-[475px] laptop-sm:max-w-[650px] laptop-sm:items-center mobile:items-start">
         <div className="flex flex-col items-start gap-y-2.5 laptop-sm:items-center mobile:items-start">
           <SectionBadge text="discover" />
-          <h2 className="text-section-title-font font-bold capitalize text-left laptop-sm:text-center mobile:text-left">
+          <h2
+            className="text-section-title-font font-bold capitalize text-left laptop-sm:text-center mobile:text-left"
+            id="details-section-title"
+          >
             Discover Conqur: Your All-in-One Freelance Management Solution
           </h2>
-          <h3 className="text-section-subtitle-font font-semibold text-left laptop-sm:text-center mobile:text-left">
+          <h3
+            className="text-section-subtitle-font font-semibold text-left laptop-sm:text-center mobile:text-left"
+            id="details-section-description"
+          >
             Efficiency, organization, and productivity redefined: Conqur
             simplifies task management, time tracking, client collaboration, and
             billing for freelance success.
