@@ -17,7 +17,35 @@
 
 - [x] Build backend API for subscription (add email-input to the subscriber list)
 - [x] Integrate the backend api to CTAFORM
-- [ ] Add Vercel CLI
+- [x] Add to Vercel
+- [x] Setup dev branch and preview deployment in vercel
+
+---
+
+- [x] Responsiveness
+
+  - [x] Header
+  - [x] Hero
+  - [x] Features
+  - [x] Details
+  - [x] Testimonials
+  - [x] CTASECTION
+  - [x] FAQSection
+  - [x] Primary Footer
+  - [x] Secondary Footer
+
+- [x] Accessibility
+
+  - [x] CTAFORM
+  - [x] Header
+  - [x] Hero
+  - [x] Features
+  - [x] Details
+  - [x] Testimonials
+  - [x] CTASECTION
+  - [x] FAQSection
+  - [x] Primary Footer
+  - [x] Secondary Footer
 
 ## Notes:
 

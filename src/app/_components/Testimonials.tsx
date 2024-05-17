@@ -5,11 +5,17 @@ import TestimonialsSlider from "./TestimonialsSlider";
 
 export default function Testimonials() {
   return (
-    <section className="px-page-margin-x py-section-pad-y">
+    <section
+      className="px-page-margin-x py-section-pad-y max-w-[1650px] mx-auto"
+      aria-labelledby="testimonials-section-title"
+    >
       <div className="flex flex-col items-center gap-y-6 mb-2 max-w-[650px] mx-auto">
         <div className="flex flex-col items-center gap-y-2.5">
-          <SectionBadge text="FEATURES" />
-          <h2 className="text-section-title-font font-bold capitalize text-center">
+          <SectionBadge text="Testimonials" />
+          <h2
+            className="text-section-title-font font-bold capitalize text-center"
+            id="testimonials-section-title"
+          >
             Early Access Reviews
           </h2>
         </div>

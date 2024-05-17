@@ -12,6 +12,51 @@
   --section-badge-font: 1rem;
   --section-title-font: 1.875rem;
   --section-subtitle-font: 1.25rem;
+
+  @media (max-width: 1281px) {
+    --page-margin-x: 56px;
+  }
+
+  @media (max-width: 1024px) {
+    --page-margin-x: 45px;
+  }
+
+  @media (max-width: 768px) {
+    --page-margin-x: 34px;
+  }
+
+  @media (max-width: 640px) {
+    --page-margin-x: 29px;
+    --logo-font: 1.35rem;
+    --cta-btn-font: 1.05rem;
+    --hero-email-input-font: 1.1rem;
+    --hero-title-font: 2rem;
+    --hero-subtitle-font: 1.2rem;
+
+    --section-badge-font: 0.875rem;
+    --section-title-font: 1.75rem;
+    --section-subtitle-font: 1.2rem;
+  }
+
+  @media (max-width: 425px) {
+    --page-margin-x: 19px;
+    --logo-font: 1.25rem;
+    --cta-btn-font: 1rem;
+    --hero-title-font: 1.875rem;
+    --hero-subtitle-font: 1.125rem;
+
+    --section-badge-font: 0.815rem;
+    --section-title-font: 1.5rem;
+    --section-subtitle-font: 1.125rem;
+  }
+
+  @media (max-width: 375px) {
+    --page-margin-x: 17px;
+  }
+
+  @media (max-width: 325px) {
+    --page-margin-x: 14px;
+  }
 }
 
 @layer base {
@@ -26,11 +71,11 @@
 
 @layer utilities {
   .my-cta-btn {
-    @apply font-semibold text-bg text-cta-btn-font flex items-center justify-center min-w-[182px] w-fit h-fit px-10 py-2 bg-primary rounded-xl duration-150 hover:bg-secondary hover:text-text active:scale-105;
+    @apply font-semibold text-bg text-cta-btn-font flex items-center justify-center min-w-[182px] w-fit h-fit px-10 py-2 bg-primary rounded-xl whitespace-nowrap duration-150 hover:bg-secondary hover:text-text active:scale-105 tablet-sm:min-w-fit tablet-sm:px-7 tablet-sm:py-1.5 mobile-lg:px-6;
   }
 
   .feature-card {
-    @apply relative w-full max-w-[450px] h-fit min-h-full overflow-hidden bg-sec-bg shadow-md px-6 pb-6 pt-28 rounded-[18px] flex flex-col gap-y-5 duration-150 hover:bg-high-sec-bg hover:shadow-lg;
+    @apply relative justify-self-center w-full max-w-[450px] h-fit min-h-full overflow-hidden bg-sec-bg shadow-md px-6 pb-6 pt-28 rounded-[18px] flex flex-col gap-y-5 duration-150 hover:bg-high-sec-bg hover:shadow-lg laptop:max-w-none tablet-sm:gap-y-4 mobile-lg:gap-y-3 mobile-lg:pt-24;
   }
 
   .feature-card > h3 {
@@ -38,11 +83,11 @@
   }
 
   .feature-card > p {
-    @apply text-lg;
+    @apply text-lg mobile-lg:text-base;
   }
 
   .feature-card > .feature-icon-holder {
-    @apply absolute bg-primary text-bg top-0 left-0 text-[42px] p-6 rounded-ee-[46px];
+    @apply absolute bg-primary text-bg top-0 left-0 text-[42px] p-6 rounded-ee-[46px] mobile-lg:text-3xl;
   }
 
   .feature-card:hover > .feature-icon-holder > svg {
@@ -67,6 +112,11 @@
 .embla {
   overflow: hidden;
   padding: 45px 0px;
+
+  @media (max-width: 555px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 .embla__container {
   display: flex;
@@ -78,6 +128,10 @@
   min-width: 0;
   min-height: 100%;
   height: fit-content;
+
+  @media (max-width: 555px) {
+    flex: 0 0 100%;
+  }
 }
 
 .embla__slide:first-of-type {

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "../styles/globals.css";
 import NotifsProvider from "@/app/_components/NotifsProvider";
+import Header from "@/app/_components/Header";
 import dynamic from "next/dynamic";
+import Footer from "@/app/_components/Footer";
 
 const NotifComp = dynamic(() => import("./_components/NotifComp"), {
   ssr: false,
@@ -31,7 +33,11 @@ export default function RootLayout({
       <body className={fontFamily.className}>
         <NotifsProvider>
           <NotifComp />
-          {children}
+          <main>
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </NotifsProvider>
       </body>
     </html>

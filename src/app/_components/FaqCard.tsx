@@ -17,14 +17,16 @@ export default function FaqCard({ f }: props) {
   const [active, setActive] = useState<boolean>(false);
 
   return (
-    <div className="max-w-[920px]">
-      <h4
+    <details className="max-w-[920px]" aria-label={`question ${f.id}`}>
+      <summary
         className="flex items-center gap-x-5 w-fit cursor-pointer"
         onClick={() => setActive((prev) => !prev)}
       >
-        <span className="text-xl">{active ? <MinusIcon /> : <PlusIcon />}</span>
+        <span className="text-xl">
+          {active ? <MinusIcon aria-hidden /> : <PlusIcon aria-hidden />}
+        </span>
         <span className="text-xl font-semibold">{f.question}</span>
-      </h4>
+      </summary>
       <AnimatePresence initial={false}>
         {active ? (
           <motion.p
@@ -41,6 +43,6 @@ export default function FaqCard({ f }: props) {
           ""
         )}
       </AnimatePresence>
-    </div>
+    </details>
   );
 }
